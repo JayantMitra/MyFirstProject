@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,12 +7,141 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="176dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="8sp"
+        android:text="DigiCalsi"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="DigiCalsi" />
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Input No.1"
+        android:inputType="numberDecimal"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="153dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Input No.2"
+        android:inputType="numberDecimal"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="242dp"
+        android:layout_height="43dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="222dp"
+        android:gravity="center_horizontal"
+        android:text="Result"
+        android:textSize="24sp"
+        tools:text="Result" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="185dp"
+        android:layout_marginStart="52dp"
+        android:background="@android:color/holo_orange_light"
+        android:fontFamily="serif"
+        android:text="ADD"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="ADD" />
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/add"
+        android:layout_marginEnd="54dp"
+        android:background="@android:color/holo_red_light"
+        android:fontFamily="serif"
+        android:text="SUB"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="SUB" />
+
+    <Button
+        android:id="@+id/mul"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/add"
+        android:layout_alignTop="@+id/div"
+        android:background="@android:color/holo_green_light"
+        android:fontFamily="serif"
+        android:text="MUL"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="MUL" />
+
+    <Button
+        android:id="@+id/div"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/sub"
+        android:layout_marginBottom="109dp"
+        android:background="@android:color/holo_blue_light"
+        android:fontFamily="serif"
+        android:text="DIV"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="DIV" />
+
+    <Button
+        android:id="@+id/clr"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:background="#c6982b"
+        android:fontFamily="serif"
+        android:text="CLEAR"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
